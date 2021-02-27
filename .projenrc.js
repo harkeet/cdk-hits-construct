@@ -8,6 +8,12 @@ const project = new AwsCdkConstructLibrary({
   jsiiFqn: "projen.AwsCdkConstructLibrary",
   name: 'cdk-hits-construct',
   repositoryUrl: 'https://github.com/harkeet/cdk-hits-construct.git',
+  cdkDependencies: [
+    '@aws-cdk/core',
+    // '@aws-cdk/aws-ec2'
+    '@aws-cdk/aws-lambda',
+    '@aws-cdk/aws-dynamodb',
+  ]
 
   /* AwsCdkConstructLibraryOptions */
   // cdkAssert: true,                                                          /* Install the @aws-cdk/assert library? */
